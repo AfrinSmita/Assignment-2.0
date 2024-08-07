@@ -42,6 +42,9 @@ header{
     width: 224px;
 
 }
+.button-container-2{
+    display: none;
+}
 .common-btn-1{
     display: none;
 }
@@ -109,7 +112,9 @@ header{
     font-weight: 400;
     font-size: 140px;
 }
-
+.button-container{
+    gap: 10px;
+}
 .normal-btn{
     background-color: #303030;
     color:#FFFFFF ;
@@ -122,6 +127,9 @@ header{
 .img-container{
     margin-right: 140px;
     position: relative;
+}
+.image-2-0{
+    display:none;
 }
 .above-box{
     position: absolute;
@@ -160,14 +168,93 @@ header{
 .box-paragraph{
    margin-top: 0;
 }
+/* end of banner */
+
+/* main body */
+/* change your habits section */
+.change-your-habit{
+    background-color: black;
+}
+.change-your-habits-heading{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 14px;
+}
+.change-your-habits-para{
+    text-align: center;
+}
+.change-img-container{
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+
+}
+.img-class{
+    width: 231px;
+    text-align: center;
+}
+.img{
+    border-radius: 100px;
+    
+}
+
+.img-heading{
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+/* Run extra */
+.run-extra-section{
+    padding: 100px;
+    background-color: black;
+}
+.run-extra-container{
+    max-width: 1060px;
+    width: 100%;
+    min-height: 371px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    border-radius: 18px;
+    background-color: rgba(34, 34, 34, 1);
+}
+.run-extra-content-container{
+    max-width: 443px;
+    width: 100%;
+}
+.run-extra-heading{
+    margin-bottom: 4px;
+}
+.run-extra-paragraph {
+    margin-bottom: 34px;
+}
+.run-extra-img-conatiner{
+   margin-top: 30px;
+   margin-bottom: 30px;
+   border-radius: 18px;
+  
+}
+.run-extra-img{
+ max-width: 336px;
+ width: 100%;
+ max-height: 312px;
+ height: 100%;
+ border-radius: 18px;
+}
+.run-extra-img-2{
+    display: none;
+}
+
+/*end of Run extra */
+
 
 @media screen and (max-width:576px) {
-    /* header{
-        padding-left: 10px;
-        
-    } */
+
     .banner-container{
         flex-direction: column;
+        width: 100%;
     }
     .nav-heading{
         margin-left: 20px;
@@ -197,16 +284,18 @@ header{
         font-size: 16px;
       }
       .contents-container{
-        width: 283px;
+        max-width:283px;
+        width: 100%;
         margin-left: 20px;
         container-type: inline-size;
       }
       .button-container{
+        display: none;
+      }
+      .button-container-2{
         display: flex;
-        /* width: 330px;
-        height: 100%; */
         gap: 10px;
-        margin: 0 auto;
+        margin-left: 20px;
        
       }
 
@@ -220,7 +309,8 @@ header{
     }
     .common-btn-1{
         display: inline;
-        width: 150px;
+        max-width: 160px;
+        width: 100%;
         height: 50px;
         background-color: #E6533C;
         color:#FFFFFF ;
@@ -233,7 +323,8 @@ header{
     
     }
     .normal-btn{
-        width: 150px;
+        max-width: 160px;
+        width: 100%;
         height: 50px;
         background-color: #303030;
         color:#FFFFFF ;
@@ -247,6 +338,13 @@ header{
         margin: 0 auto;
         position: relative;
     }
+    .image-2{
+        display: none;
+    }
+    .image-2-0{
+        display: inline;
+        width: 100%;
+    }
     .img-div{
       
     }
@@ -254,8 +352,10 @@ header{
         position: absolute;
         top: 55px;
         left: 190px;
-        width: 115px;
-        height: 74px;
+        max-width: 110px;
+        width: 100%;
+        max-height: 74px;
+        height: 100%;
         border-radius:12px ;
         padding-left:1.5rem ; 
         /* padding-right: 20px; */
@@ -265,7 +365,7 @@ header{
         position: absolute;
         left: 26px;
         right:100px;
-        bottom: 183px;
+        bottom: 143px;
         width: 99px;
         height: 78px;
         border-radius:12px ;
@@ -292,4 +392,90 @@ header{
        margin-top: 0;
     }
     
+/* main body */
+/* change your habits section */
+.change-your-habit{
+    background-color: black;
+}
+.change-your-habits-heading{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+.change-your-habits-para{
+    text-align: center;
+}
+.change-img-container{
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    border: 5px solid violet;
+}
+.img-class{
+    width: 231px;
+    text-align: center;
+}
+.img{
+    border-radius: 100px;
+    
+}
+
+.img-heading{
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+/* end of change your habit */
+
+
+
+/* Run extra */
+.run-extra-section{
+    padding: 0;
+}
+.run-extra-container{
+   max-width: 353px;
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    flex-direction: column;
+     /* border: 5px solid violet; */
+   
+}
+.run-extra-content-container{
+    max-width: 287px;
+    width: 100%;
+    margin: 0 auto;
+}
+.run-extra-heading {
+    font-size: 32px;
+}
+.extra{
+    display: inline;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.run-extra-img-conatiner{
+    max-width: 287px;
+    width: 100%;
+    margin: 0 auto; 
+}
+.run-extra-img{
+    display: none;
+}
+.run-extra-img-2{
+    display: inline;
+    max-width: 287px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
+}
+
+
+
+
+
+
+
 }
