@@ -395,9 +395,6 @@ header{
         display: inline;
         width: 100%;
     }
-    .img-div{
-      
-    }
     .above-box{
         position: absolute;
         top: 55px;
@@ -478,9 +475,7 @@ header{
 
 /* end of change your habit */
 
-
-
-/* Run extra */
+/* start of Run extra */
 .run-extra-section{
     padding: 0;
 }
@@ -489,10 +484,9 @@ header{
    width: 100%;
    margin-top: 20px;
    margin-bottom: 20px;
-    flex-direction: column;
-     /* border: 5px solid violet; */
-   
+    flex-direction: column;  
 }
+
 .run-extra-content-container{
     max-width: 287px;
     width: 100%;
@@ -521,6 +515,7 @@ header{
     margin: 0 auto;
     border-radius: 18px;
 }
+/* end of run extra section */
 
 /* start of creative section */
 .creative-section-div{
@@ -537,9 +532,19 @@ header{
     font-size: 32px;
 }
 .creative-section-images{
+    border: 5px solid violet;
+    min-height: 200px ;
+    height:100%;
     margin: 10px 10px;
 }
-
+.creative-section-images img{
+    max-width: 200px;
+    width: 100%;
+    max-height: 150px;
+    height: 100%;
+    border-radius: 8px;
+}
+/* end of creative section */
 
 
 
