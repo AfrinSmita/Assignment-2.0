@@ -379,6 +379,105 @@ input{
 .bmi-btn{
     display: none;
 }
+/* end of bmi */
+
+/* meet our team */
+.meet-our-team-section{
+    background-color: black;
+    padding-bottom: 88px;
+    padding-top: 88px;
+}
+.team-section-heading{
+    text-align: center;
+}
+.team-section-para{
+    text-align: center;
+    margin-bottom: 84px;
+}
+.pic-1{
+    background-image: url('../images/trainer1.png');
+    background-size: cover;
+    min-height: 272px;
+    height: 100%;
+    border-radius:18px;
+    position: relative;
+
+}
+.pic-2{
+    background-image: url('../images/trainer2.png');   
+    background-size: cover;
+    min-height: 272px;
+    height: 100%;
+    border-radius:18px ;
+    position: relative;
+}
+.pic-3{
+    background-image: url('../images/trainer3.png');  
+    background-size: cover; 
+    min-height: 272px;
+    height: 100%;
+    border-radius:18px ;
+    position: relative;
+}
+.pic-4{
+    background-image: url('../images/trainer4.png'); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 272px;
+    height: 100%;
+    border-radius:18px ;
+    position: relative;
+}
+.pic-5{
+    background-image: url('../images/trainer5.png'); 
+    background-size: cover; 
+    min-height: 272px;
+    height: 100%; 
+    border-radius:18px ;
+    position: relative;
+}
+.pic-6{
+    background-image: url('../images/trainer6.png'); 
+    background-size: cover;  
+    min-height: 272px;
+    height: 100%;
+    border-radius:18px ;
+    position: relative;
+}
+
+.team-pictures-2{ 
+    display: none;
+
+}
+
+.team-pictures{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    border-radius:18px ;
+    background-color: rgba(34, 34, 34, 1);
+    
+}
+.team-heading{
+   position: absolute;
+   bottom:35px;
+   left: 18px;
+   color: #FFFFFF;
+   font-size: 20px;
+    font-weight: 900;
+}
+.team-para{
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+
 
 @media screen and (max-width:576px) {
 
@@ -650,6 +749,12 @@ input{
 .bmi-heading{
     font-size: 32px;
 }
+.bmi-div-headings-1{
+    font-size: 16px;
+}
+.bmi-div-headings-2{
+    font-size: 16px;
+}
 .bmi-calculation-container {
     flex-direction: column;
     height:100%;
@@ -668,7 +773,29 @@ input{
     width: 100%;
   
 }
+/* end of bmi */
 
-
+/* meet our team */
+.meet-our-team-section{
+    padding-bottom: 66px;
+    padding-top: 66px;
+}
+.team-section-heading{
+    font-size: 32px;
+}
+.team-pictures{
+    display: none;
+}
+.team-pictures-2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    max-width: 353px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+    border-radius:18px ;
+    background-color: rgba(34, 34, 34, 1);
+}
 
 }
