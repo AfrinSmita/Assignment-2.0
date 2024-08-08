@@ -135,8 +135,10 @@ header{
     position: absolute;
     top: 125px;
     left: 230px;
-    width: 193px;
-    height: 100px;
+    max-width: 193px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
     border-radius:12px ;
     padding-left:1.5rem ; 
     background-color:rgba(255, 255, 255, 0.1) ;
@@ -246,10 +248,58 @@ header{
 .run-extra-img-2{
     display: none;
 }
-
 /*end of Run extra */
 
+/* start of creative section */
+.creative-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+.creative-section-div {
+    border: 5px solid violet;
+    background-color: rgba(34, 34, 34, 1);
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 18px;
+    justify-content: space-around;
+}
+.creative-section-contents{
+    max-width: 443px;
+    width: 100%;
+   
+    
+}
+.creative-section-heading{
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+.creative-section-btn{
+    display: none;
+}
+.creative-section-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    /* border: 5px solid violet; */
+    min-height: 371px;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.creative-section-images img{
+    max-width: 250px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+
+/*end of creative section */
 @media screen and (max-width:576px) {
 
     .banner-container{
@@ -472,7 +522,23 @@ header{
     border-radius: 18px;
 }
 
-
+/* start of creative section */
+.creative-section-div{
+    flex-direction: column-reverse;
+    max-width: 453px;
+    width: 100%;
+}
+.creative-section-contents{
+    text-align: center;
+}
+.creative-section-heading{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.creative-section-images{
+    margin: 10px 10px;
+}
 
 
 
