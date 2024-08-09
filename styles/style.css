@@ -8,6 +8,7 @@
 }
 *{
     border:1px solid red;
+    box-sizing: border-box;
 }
 body{
     border: 3px dashed green;
@@ -191,6 +192,7 @@ header{
     width: 100%;
     margin: 0 auto;
     justify-content: space-evenly;
+    box-sizing: border-box;
 
 }
 .img-class{
@@ -263,8 +265,8 @@ header{
     max-width: 1060px;
     width: 100%;
     margin: 0 auto;
-    border-radius: 18px;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 .creative-section-contents{
     max-width: 443px;
@@ -693,7 +695,8 @@ input{
     border: 5px solid violet;
 }
 .img-class{
-    width: 231px;
+    max-width: 231px;
+    width: 100%;
     text-align: center;
 }
 .img{
@@ -851,6 +854,10 @@ input{
     padding: 20px;
     border-radius:18px ;
     background-color: rgba(34, 34, 34, 1);
+    box-sizing: border-box;
+}
+.pic-2{
+    box-sizing: border-box;
 }
 /* end of meet out team */
 
@@ -861,7 +868,7 @@ input{
 .footer-container-div{
     flex-direction: column;
     max-width: 353px;
-   width: 100%;
+    width: 100%;
     
 }
 /* end of footer */
