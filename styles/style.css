@@ -7,7 +7,7 @@
   font-style: normal;
 }
 *{
-    border:1px solid red;
+    /* border:1px solid red; */
   
 }
 body{
@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    background: linear-gradient(to bottom, #111111,#303030,#111111);
+    background: linear-gradient(to bottom, black,#303030,black);
 }
 
 /* shared styles */
@@ -148,7 +148,7 @@ header{
     position: absolute;
     right: 266px;
     bottom: 63px;
-    max-width: 170px;
+    max-width: 190px;
     width: 100%;
     height: 98px;
     border-radius:12px ;
@@ -178,6 +178,8 @@ header{
 /* change your habits section */
 .change-your-habit{
     background-color: black;
+    padding-top: 10px;
+
 }
 .change-your-habits-heading{
     text-align: center;
@@ -212,7 +214,7 @@ header{
 
 /* Run extra */
 .run-extra-section{
-    padding: 100px;
+    padding: 100px 190px 96px 190px;
     background-color: black;
 }
 .run-extra-container{
@@ -260,13 +262,13 @@ header{
     background-color: black;
 }
 .creative-section-div {
-    border: 5px solid violet;
     background-color: rgba(34, 34, 34, 1);
     max-width: 1060px;
     width: 100%;
     margin: 0 auto;
     justify-content: space-around;
     box-sizing: border-box;
+    border-radius: 18px;
 }
 .creative-section-contents{
     max-width: 443px;
@@ -282,7 +284,6 @@ header{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
-    /* border: 5px solid violet; */
     min-height: 371px;
     height: 100%;
     margin-top: 20px;
@@ -301,6 +302,7 @@ header{
 /* start of bmi */
 .bmi-calculation-section{
     background-color: black;
+    padding-top: 10px;
 }
 .bmi-section-content{
     max-width: 677px;
@@ -364,6 +366,8 @@ table{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 16px;
+    padding-left: 20px;
+    border: none;
 
 }
 input{
@@ -539,7 +543,9 @@ input{
     *{
         box-sizing: border-box;
     }
-
+    main{
+        background-color: black;
+    }
     .banner-container{
         flex-direction: column;
         width: 100%;
@@ -675,13 +681,14 @@ input{
     }
     .box-paragraph{
         font-size: 9px;
-       margin-top: 0;
+        margin-top: 0;
     }
     
 /* main body */
 /* change your habits section */
 .change-your-habit{
-    background-color: black;
+  padding-top: 1px;
+
 }
 .change-your-habits-heading{
     text-align: center;
@@ -695,7 +702,7 @@ input{
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
-    border: 5px solid violet;
+
 }
 .img-class{
     max-width: 231px;
@@ -717,7 +724,7 @@ input{
 
 /* start of Run extra */
 .run-extra-section{
-    padding: 0;
+    padding: 0px 20px 66px 20px;
 }
 .run-extra-container{
    max-width: 353px;
@@ -725,13 +732,14 @@ input{
    margin-top: 20px;
    margin-bottom: 20px;
    padding-bottom: 35px;
-    flex-direction: column;  
+   flex-direction: column;  
 }
 
 .run-extra-content-container{
-    max-width: 287px;
+    max-width: 297px;
     width: 100%;
     margin: 0 auto;
+    padding: 21px 33px;
 }
 .run-extra-heading {
     font-size: 32px;
@@ -742,9 +750,11 @@ input{
     margin-bottom: 30px;
 }
 .run-extra-img-conatiner{
-    max-width: 287px;
+    max-width: 297px;
     width: 100%;
     margin: 0 auto; 
+    padding-left: 33px;
+    padding-right: 33px;
 }
 .run-extra-img{
     display: none;
@@ -763,17 +773,16 @@ input{
     flex-direction: column-reverse;
     max-width: 453px;
     width: 100%;
+    border-radius: 0;
 }
 .creative-section-contents{
     text-align: center;
 }
 .creative-section-heading{
     margin-top: 30px;
-    margin-bottom: 10px;
     font-size: 32px;
 }
 .creative-section-images{
-    border: 5px solid violet;
     min-height: 200px ;
     height:100%;
     margin: 10px 10px;
@@ -806,7 +815,7 @@ input{
 .bmi-section-content{
     max-width: 353px;
     width: 100%;
-    margin: 0 auto;
+    /* margin-left: 10px; */
 }
 .bmi-heading{
     font-size: 32px;
@@ -820,7 +829,6 @@ input{
 .bmi-calculation-container {
     flex-direction: column;
     height:100%;
-    padding-top: 28px;
     padding-left: 20px;
     padding-right: 20px;
   
@@ -849,6 +857,10 @@ input{
 .team-section-heading{
     font-size: 32px;
 }
+.team-section-para{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .team-pictures{
     display: none;
 }
@@ -876,7 +888,8 @@ input{
 .footer-container-div{
     flex-direction: column;
     max-width: 353px;
-    width: 100%;   
+    width: 100%; 
+    padding-left: 10px;
 }
 .line{
     margin-top: 72px;
