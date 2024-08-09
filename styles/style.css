@@ -93,12 +93,13 @@ header{
 /* banner starts */
 
 .banner-container{
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* margin: 0 auto; */
 }
 .contents-container{
     max-width: 37.44rem;
     width: 100%;
-    margin-left:11.875rem ;
+    /* margin-left:11.875rem ; */
 }
 .banner-heading{
     font-size:4.875rem;
@@ -126,7 +127,7 @@ header{
     font-weight: 600;
 }
 .img-container{
-    margin-right: 140px;
+    /* margin-right: 140px; */
     position: relative;
 }
 .image-2-0{
@@ -135,13 +136,13 @@ header{
 .above-box{
     position: absolute;
     top: 125px;
-    left: 230px;
-    max-width: 193px;
+    left: 200px;
+    max-width: 173px;
     width: 100%;
     max-height: 100px;
     height: 100%;
     border-radius:12px ;
-    padding-left:1.5rem ; 
+    padding-left:2.5rem ; 
     background-color:rgba(255, 255, 255, 0.1) ;
 }
 .below-box{
@@ -152,10 +153,22 @@ header{
     width: 100%;
     height: 98px;
     border-radius:12px ;
-    padding-left:65px ;
+    padding-left:15px ;
     background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 }
+.round-box{
+    border: 1px solid orangered;
+    max-width: 40px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #E6533C;
 
+}
 .box-heading-1{
     margin-top: 10px;
     margin-bottom: 0;
@@ -657,12 +670,25 @@ input{
         left: 26px;
         right:100px;
         bottom: 143px;
-        max-width: 155px;
+        max-width: 165px;
         width: 100%;
         height: 78px;
         border-radius:12px ;
-        padding-left:35px ;
+        padding-left:5px; 
         background-color: rgba(255, 255, 255, 0.1);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .round-box{
+        border: 1px solid orangered;
+        max-width: 30px;
+        width: 100%;
+        max-height: 30px;
+        height: 100%;
+        border-radius: 100px;
+        background-color: #E6533C;
+        margin-top: 10px;
     }
     
     .box-heading-1{
@@ -674,7 +700,7 @@ input{
         color:#FFFFFF;
     }
     .box-heading-2{
-        margin-bottom: 0;
+        margin-bottom: 5px;
         font-size: 1.5rem;
         font-weight: 900;
         color:#FFFFFF ;
@@ -682,6 +708,7 @@ input{
     .box-paragraph{
         font-size: 9px;
         margin-top: 0;
+        margin-bottom: 20px;
     }
     
 /* main body */
@@ -815,7 +842,6 @@ input{
 .bmi-section-content{
     max-width: 353px;
     width: 100%;
-    /* margin-left: 10px; */
 }
 .bmi-heading{
     font-size: 32px;
@@ -902,5 +928,103 @@ input{
 }
 
 /* end of footer */
+
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+   /* navbar */
+   *{
+    box-sizing: border-box;
+   }
+   .nav-container{
+    justify-content: space-between;
+    padding: 52px 30px;
+    align-items: center;
+    
+ }
+ .banner-container{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contents-container{
+    max-width: 37.44rem;
+    width: 100%;
+   margin: 0 auto;
+}
+.img-container{
+    /* margin-right: 160px;
+    margin-left: 160px; */
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid red;
+}
+.above-box{
+    position: absolute;
+    top: 55px;
+    left: 190px;
+    max-width: 193px;
+    width: 100%;
+    max-height: 98px;
+    height: 100%;
+    border-radius:12px ;
+    padding-left:1.5rem ; 
+    /* padding-right: 20px; */
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
+.below-box{
+    position: absolute;
+    left: 26px;
+    right:100px;
+    bottom: 163px;
+    max-width: 206px;
+    width: 100%;
+    max-height: 98px;
+    height: 100%;
+    border-radius:12px ;
+    padding-left:35px ;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* main body */
+/* change your habits section */
+.change-your-habits-heading{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 14px;
+}
+.change-your-habits-para{
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+    margin-bottom: 58px;
+}
+.change-img-container{
+    max-width: 566px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-sizing: border-box;
+
+
+}
+.img-class{
+    width: 231px;
+    text-align: center;
+}
+.img{
+    border-radius: 100px;
+    
+}
+
+.img-heading{
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
 
 }
