@@ -8,10 +8,11 @@
 }
 *{
     border:1px solid red;
-    box-sizing: border-box;
+  
 }
 body{
     border: 3px dashed green;
+    box-sizing: border-box;
 }
 
 header{
@@ -70,10 +71,6 @@ header{
    height: 100%;
    
 }
-.nav-contents{
- 
-    
-}
 .links{
     text-decoration: none;
     margin-right: 20px;
@@ -99,7 +96,8 @@ header{
     justify-content: space-between;
 }
 .contents-container{
-    width: 37.44rem;
+    max-width: 37.44rem;
+    width: 100%;
     margin-left:11.875rem ;
 }
 .banner-heading{
@@ -115,6 +113,7 @@ header{
     font-size: 140px;
 }
 .button-container{
+    width: 100%;
     gap: 10px;
 }
 .normal-btn{
@@ -149,10 +148,11 @@ header{
     position: absolute;
     right: 266px;
     bottom: 63px;
-    width: 199px;
+    max-width: 170px;
+    width: 100%;
     height: 98px;
     border-radius:12px ;
-    padding-left:75px ;
+    padding-left:65px ;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -523,7 +523,6 @@ input{
     
 }
 .line{
-    color: violet;
     width: 70%;
     margin-top: 97px;
     margin-bottom: 50px;
@@ -537,6 +536,9 @@ input{
 
 
 @media screen and (max-width:576px) {
+    *{
+        box-sizing: border-box;
+    }
 
     .banner-container{
         flex-direction: column;
@@ -635,7 +637,7 @@ input{
         position: absolute;
         top: 55px;
         left: 190px;
-        max-width: 110px;
+        max-width: 145px;
         width: 100%;
         max-height: 74px;
         height: 100%;
@@ -649,7 +651,8 @@ input{
         left: 26px;
         right:100px;
         bottom: 143px;
-        width: 99px;
+        max-width: 155px;
+        width: 100%;
         height: 78px;
         border-radius:12px ;
         padding-left:35px ;
@@ -721,6 +724,7 @@ input{
    width: 100%;
    margin-top: 20px;
    margin-bottom: 20px;
+   padding-bottom: 35px;
     flex-direction: column;  
 }
 
@@ -816,6 +820,10 @@ input{
 .bmi-calculation-container {
     flex-direction: column;
     height:100%;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
 }
 .table-container{
     max-width: 353px;
@@ -868,9 +876,18 @@ input{
 .footer-container-div{
     flex-direction: column;
     max-width: 353px;
-    width: 100%;
-    
+    width: 100%;   
 }
+.line{
+    margin-top: 72px;
+    width: 85%;
+}
+.last-paragraph{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
 /* end of footer */
 
 }
