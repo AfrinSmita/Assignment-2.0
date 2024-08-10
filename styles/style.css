@@ -7,12 +7,13 @@
   font-style: normal;
 }
 *{
-    /* border:1px solid red; */
+
+    box-sizing: border-box;
   
 }
 body{
-    border: 3px dashed green;
-    box-sizing: border-box;
+
+   
 }
 
 header{
@@ -41,8 +42,12 @@ header{
     padding: 1rem 2.8rem ;
     font-size: 1.12rem;
     font-weight: 600;
-    width: 224px;
+    max-width: 224px;
+    width: 100%;
 
+}
+.buy-now{
+    display: none;
 }
 .button-container-2{
     display: none;
@@ -55,13 +60,14 @@ header{
 .nav-container{
    justify-content: space-between;
    padding: 3.56rem 11.875rem ;
-   
+
 }
 .nav-heading{
     font-style: italic;
     font-size: 2.25rem;
     font-weight: 800;
     color: rgba(230, 83, 60, 1);
+    opacity: 50%;
 }
 
 .links-container{
@@ -94,12 +100,11 @@ header{
 
 .banner-container{
     justify-content: space-evenly;
-    /* margin: 0 auto; */
+    border: none;
 }
 .contents-container{
     max-width: 37.44rem;
     width: 100%;
-    /* margin-left:11.875rem ; */
 }
 .banner-heading{
     font-size:4.875rem;
@@ -115,9 +120,11 @@ header{
 }
 .button-container{
     width: 100%;
-    gap: 10px;
+    gap: 14px;
 }
 .normal-btn{
+    max-width: 224px;
+    width: 100%;
     background-color: #303030;
     color:#FFFFFF ;
     border: 1px solid #FFFFFF ;
@@ -137,12 +144,12 @@ header{
     position: absolute;
     top: 125px;
     left: 200px;
-    max-width: 173px;
+    max-width: 193px;
     width: 100%;
     max-height: 100px;
     height: 100%;
     border-radius:12px ;
-    padding-left:2.5rem ; 
+    padding-left:1rem ; 
     background-color:rgba(255, 255, 255, 0.1) ;
 }
 .below-box{
@@ -157,7 +164,7 @@ header{
     background-color: rgba(255, 255, 255, 0.1);
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 1px;
 }
 .round-box{
     border: 1px solid orangered;
@@ -177,6 +184,7 @@ header{
     color:#FFFFFF;
 }
 .box-heading-2{
+    margin-top: 10px;
     margin-bottom: 0;
     font-size: 1.5rem;
     font-weight: 900;
@@ -236,13 +244,16 @@ header{
     min-height: 371px;
     height: 100%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 18px;
     background-color: rgba(34, 34, 34, 1);
 }
 .run-extra-content-container{
     max-width: 443px;
     width: 100%;
+    margin-left: 54px;
+    margin-top:40px ;
+    /* margin-bottom: 40px; */
 }
 .run-extra-heading{
     margin-bottom: 4px;
@@ -253,15 +264,19 @@ header{
 .run-extra-img-conatiner{
    margin-top: 30px;
    margin-bottom: 30px;
+   margin-right: 30px;
    border-radius: 18px;
   
 }
 .run-extra-img{
  max-width: 336px;
  width: 100%;
- max-height: 312px;
+ min-height: 372px;
  height: 100%;
  border-radius: 18px;
+
+ object-fit: none;
+ object-position: 66% 33%;
 }
 .run-extra-img-2{
     display: none;
@@ -285,14 +300,13 @@ header{
 }
 .creative-section-contents{
     max-width: 443px;
-    width: 100%;
-   
-    
+    width: 100%;   
 }
 .creative-section-heading{
     margin-top: 90px;
     margin-bottom: 10px;
 }
+
 .creative-section-images{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -317,10 +331,16 @@ header{
     background-color: black;
     padding-top: 10px;
 }
-.bmi-section-content{
-    max-width: 677px;
-    width: 100%;
-    margin: 0 auto;
+
+.bmi-heading{
+    margin-left: 384.5px;
+    margin-right: 384.5px;
+    margin-bottom: 14px;
+}
+.bmi-para{
+    margin-left: 384.5px;
+    margin-right: 384.5px;
+    margin-bottom: 88px;
 }
 
 table,th,td{
@@ -525,6 +545,7 @@ input{
     font-style: italic;
     font-size: 70px;
     font-weight: 900;
+    margin-bottom: 14px;
 }
 .content-2-heading{
     color: #FFFFFF;
@@ -535,7 +556,7 @@ input{
 .footer-list{
    list-style: none;
    padding-left: 0;
-   line-height: 50px;
+   line-height: 40px;
 
 }
 
@@ -571,6 +592,7 @@ input{
     }
     .nav-heading{
         margin-left: 20px;
+        opacity: 100%;
     }
     .nav-container{
         padding: 0;
@@ -607,8 +629,9 @@ input{
       }
       .button-container-2{
         display: flex;
-        gap: 10px;
-        margin-left: 20px;
+        gap: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
        
       }
 
@@ -622,7 +645,7 @@ input{
     }
     .common-btn-1{
         display: inline;
-        max-width: 160px;
+        max-width: 179px;
         width: 100%;
         height: 50px;
         background-color: #E6533C;
@@ -636,7 +659,7 @@ input{
     
     }
     .normal-btn{
-        max-width: 160px;
+        max-width: 179px;
         width: 100%;
         height: 50px;
         background-color: #303030;
@@ -662,11 +685,13 @@ input{
         position: absolute;
         top: 55px;
         left: 190px;
+        right: 34px;
         max-width: 145px;
         width: 100%;
         max-height: 74px;
         height: 100%;
         border-radius:12px ;
+        margin-right: 34px;
         padding-left:1.5rem ; 
         /* padding-right: 20px; */
         background-color:rgba(255, 255, 255, 0.1) ;
@@ -684,6 +709,7 @@ input{
         background-color: rgba(255, 255, 255, 0.1);
         justify-content: center;
         align-items: center;
+        gap: 15px;
     }
 
     .round-box{
@@ -706,6 +732,7 @@ input{
         color:#FFFFFF;
     }
     .box-heading-2{
+        margin-top: 33px;
         margin-bottom: 5px;
         font-size: 1.5rem;
         font-weight: 900;
@@ -769,7 +796,7 @@ input{
 }
 
 .run-extra-content-container{
-    max-width: 297px;
+    max-width: 343px;
     width: 100%;
     margin: 0 auto;
     padding: 21px 33px;
@@ -779,11 +806,12 @@ input{
 }
 .extra{
     display: inline;
+    max-width: 343px;
     width: 100%;
     margin-bottom: 30px;
 }
 .run-extra-img-conatiner{
-    max-width: 297px;
+    max-width: 333px;
     width: 100%;
     margin: 0 auto; 
     padding-left: 33px;
@@ -794,7 +822,7 @@ input{
 }
 .run-extra-img-2{
     display: inline;
-    max-width: 287px;
+    max-width: 343px;
     width: 100%;
     margin: 0 auto;
     border-radius: 18px;
@@ -814,6 +842,22 @@ input{
 .creative-section-heading{
     margin-top: 30px;
     font-size: 32px;
+}
+.creative-section-paragraph{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.buy-now{
+    background-color: #E6533C;
+    color:#FFFFFF ;
+    border: none;
+    border-radius: 2.6rem;
+    padding: 1rem 2.8rem ;
+    font-size: 1.12rem;
+    font-weight: 600;
+    max-width: 224px;
+    width: 100%;
+    margin-bottom: 33px;
 }
 .creative-section-images{
     min-height: 200px ;
@@ -848,13 +892,20 @@ input{
 .bmi-calculation-section{
 
 }
-.bmi-section-content{
+/* .bmi-section-content{
     max-width: 353px;
     width: 100%;
-    margin: 0 auto;
-}
+    
+} */
 .bmi-heading{
     font-size: 32px;
+    margin-left: 20px;
+    margin-right:117px ;
+}
+.bmi-para{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 32px;
 }
 .bmi-div-headings-1{
     font-size: 16px;
@@ -1003,6 +1054,10 @@ input{
 
 /* main body */
 /* change your habits section */
+.nav-heading{
+    margin-left: 20px;
+    opacity: 100%;
+}
 .change-your-habits-heading{
     text-align: center;
     font-size: 48px;
@@ -1070,9 +1125,9 @@ input{
   
 }
 .run-extra-img{
- max-width: 336px;
+ max-width: 256px;
  width: 100%;
- max-height: 319px;
+ max-height: 399px;
  height: 100%;
  border-radius: 18px;
  margin-top: 20px;
@@ -1132,6 +1187,15 @@ input{
 
 .bmi-calculation-container{
  flex-direction: column;
+}
+.bmi-heading{
+    margin-left: 29px;
+    margin-right: 120px;
+}
+.bmi-para{
+    margin-left: 29px;
+    margin-right: 120px;
+    margin-bottom: 44px;
 }
 
 .table-container{
