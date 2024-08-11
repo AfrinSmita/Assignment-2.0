@@ -146,6 +146,8 @@ header{
 .img-container{
     position: relative;
     margin-right: 20px;
+    padding-right: 20px;
+    border: 1px solid violet;
 }
 .image-2-0{
     display:none;
@@ -159,7 +161,7 @@ header{
     max-height: 100px;
     height: 100%;
     border-radius:12px ;
-    padding-left:.75rem ; 
+    padding-left:1rem ; 
     background-color:rgba(255, 255, 255, 0.1) ;
     font-size: 13px;
 }
@@ -444,6 +446,8 @@ input{
     background-color: black;
     padding-bottom: 88px;
     padding-top: 88px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .team-section-heading{
     text-align: center;
@@ -561,7 +565,8 @@ input{
 .footer-content-1{
     max-width: 443px;
     width: 100%;
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .footer-heading{
     color: rgba(230, 83, 60, 1);
@@ -696,6 +701,7 @@ input{
     .img-container{
         margin: 0 auto;
         position: relative;
+        padding-right: 20px;
     }
     .image-2{
         display: none;
@@ -709,14 +715,14 @@ input{
         top: 55px;
         left: 190px;
         right: 34px;
-        max-width: 145px;
+        max-width: 135px;
         width: 100%;
         max-height: 74px;
         height: 100%;
         border-radius:12px ;
         margin-right: 34px;
         padding-left:1.5rem ; 
-        /* padding-right: 20px; */
+        padding-right: 20px;
         background-color:rgba(255, 255, 255, 0.1) ;
     }
     .below-box{
@@ -724,7 +730,7 @@ input{
         left: 26px;
         right:100px;
         bottom: 143px;
-        max-width: 165px;
+        max-width: 155px;
         width: 100%;
         height: 78px;
         border-radius:12px ;
@@ -1001,6 +1007,8 @@ input{
 .footer-content-1{
     max-width: 317px;
     width: 100%;
+    /* margin-left: 20px;
+    margin-right: 10px; */
 }
 .footer-informations{
     flex-direction: column;
@@ -1054,7 +1062,7 @@ input{
     position: absolute;
     top: 55px;
     left: 190px;
-    max-width: 193px;
+    max-width: 173px;
     width: 100%;
     max-height: 98px;
     height: 100%;
@@ -1068,12 +1076,12 @@ input{
     left: 26px;
     right:100px;
     bottom: 163px;
-    max-width: 206px;
+    max-width: 196px;
     width: 100%;
     max-height: 98px;
     height: 100%;
     border-radius:12px ;
-    padding-left:35px ;
+    padding-left:15px ;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
