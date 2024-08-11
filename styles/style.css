@@ -59,7 +59,12 @@ header{
 /* navbar */
 .nav-container{
    justify-content: space-between;
-   padding: 3.56rem 11.875rem ;
+   align-items: center;
+   max-width: 1070px;
+   width: 100%;
+   margin: 0 auto;
+   /* padding: 3.56rem 11.875rem ; */
+   padding-top: 3.56rem;
 
 }
 .nav-heading{
@@ -68,6 +73,7 @@ header{
     font-weight: 800;
     color: rgba(230, 83, 60, 1);
     opacity: 50%;
+    margin-left: 20px;
 }
 
 .links-container{
@@ -75,7 +81,7 @@ header{
    border-radius: 18px;
    padding: 10px 2px;
    height: 100%;
-   
+   margin-right: 20px;
 }
 .links{
     text-decoration: none;
@@ -99,12 +105,16 @@ header{
 /* banner starts */
 
 .banner-container{
-    justify-content: space-evenly;
+    justify-content: space-between;
     border: none;
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
 }
 .contents-container{
     max-width: 37.44rem;
     width: 100%;
+    margin-left: 20px;
 }
 .banner-heading{
     font-size:4.875rem;
@@ -136,6 +146,7 @@ header{
 .img-container{
     /* margin-right: 140px; */
     position: relative;
+    margin-right: 20px;
 }
 .image-2-0{
     display:none;
@@ -144,24 +155,26 @@ header{
     position: absolute;
     top: 125px;
     left: 200px;
-    max-width: 193px;
+    max-width: 163px;
     width: 100%;
     max-height: 100px;
     height: 100%;
     border-radius:12px ;
-    padding-left:1rem ; 
+    padding-left:.75rem ; 
     background-color:rgba(255, 255, 255, 0.1) ;
+    font-size: 13px;
 }
 .below-box{
     position: absolute;
     right: 266px;
     bottom: 63px;
-    max-width: 190px;
+    max-width: 180px;
     width: 100%;
     height: 98px;
     border-radius:12px ;
     padding-left:15px ;
     background-color: rgba(255, 255, 255, 0.1);
+    font-size: 13px;
     justify-content: space-around;
     align-items: center;
     gap: 1px;
@@ -200,7 +213,7 @@ header{
 .change-your-habit{
     background-color: black;
     padding-top: 10px;
-
+    border: none;
 }
 .change-your-habits-heading{
     text-align: center;
@@ -253,7 +266,6 @@ header{
     width: 100%;
     margin-left: 54px;
     margin-top:40px ;
-    /* margin-bottom: 40px; */
 }
 .run-extra-heading{
     margin-bottom: 4px;
@@ -288,6 +300,7 @@ header{
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: black;
+    border: none;
 }
 .creative-section-div {
     background-color: rgba(34, 34, 34, 1);
@@ -297,6 +310,7 @@ header{
     justify-content: space-around;
     box-sizing: border-box;
     border-radius: 18px;
+    border: none;
 }
 .creative-section-contents{
     max-width: 443px;
@@ -332,14 +346,20 @@ header{
     padding-top: 10px;
 }
 
+.bmi-section-content{
+    margin: 0 auto;
+    max-width: 667px;
+    width: 100%;
+}
+
 .bmi-heading{
-    margin-left: 384.5px;
-    margin-right: 384.5px;
+    /* margin-left: 384.5px;
+    margin-right: 384.5px; */
     margin-bottom: 14px;
 }
 .bmi-para{
-    margin-left: 384.5px;
-    margin-right: 384.5px;
+    /* margin-left: 384.5px;
+    margin-right: 384.5px; */
     margin-bottom: 88px;
 }
 
@@ -530,15 +550,19 @@ input{
     width: 100%;
     margin: 0 auto;
     padding-top: 0;
+    gap: 102px;
 }
 .footer-informations {
     max-width: 514px;
     width: 100%;
     justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .footer-content-1{
     max-width: 443px;
     width: 100%;
+    margin-left: 20px;
 }
 .footer-heading{
     color: rgba(230, 83, 60, 1);
@@ -574,6 +598,7 @@ input{
 .last-paragraph{
     text-align: center;
     font-size: 20px;
+
 }
 
 /* end of footer */
@@ -962,33 +987,40 @@ input{
     border-radius:18px ;
     background-color: rgba(34, 34, 34, 1);
     box-sizing: border-box;
+
 }
-.pic-2{
-    box-sizing: border-box;
-}
+
 /* end of meet out team */
 
 /* start of footer */
 .footer-container{
-    padding-top: 0;
+    padding-bottom: 57px;
 }
 .footer-container-div{
     flex-direction: column;
-    max-width: 353px;
+    max-width: 343px;
     width: 100%; 
-    padding-left: 10px;
+    margin: 0;
+   
+}
+.footer-content-1{
+    max-width: 317px;
+    width: 100%;
 }
 .footer-informations{
     flex-direction: column;
+
 }
 .line{
     margin-top: 72px;
-    width: 85%;
+    width: 95%;
 }
 .last-paragraph{
     text-align: left;
-    margin-left: 30px;
+     margin-left: 20px;
     font-size: 20px;
+
+
 }
 
 /* end of footer */
@@ -1188,6 +1220,9 @@ input{
 .bmi-calculation-container{
  flex-direction: column;
 }
+.bmi-section-content{
+    margin: 0 120px 0 29px;
+}
 .bmi-heading{
     margin-left: 29px;
     margin-right: 120px;
@@ -1280,6 +1315,7 @@ input{
 .team-pictures{
     max-width: 677px;
     width: 100%;
+   
     
 }
 
