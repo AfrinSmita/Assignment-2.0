@@ -144,7 +144,6 @@ header{
     font-weight: 600;
 }
 .img-container{
-    /* margin-right: 140px; */
     position: relative;
     margin-right: 20px;
 }
@@ -647,7 +646,6 @@ input{
         max-width:283px;
         width: 100%;
         margin-left: 20px;
-        container-type: inline-size;
       }
       .button-container{
         display: none;
@@ -809,7 +807,7 @@ input{
 
 /* start of Run extra */
 .run-extra-section{
-    padding: 0px 20px 66px 20px;
+    padding: 66px 20px 66px 20px;
 }
 .run-extra-container{
    max-width: 353px;
@@ -917,11 +915,6 @@ input{
 .bmi-calculation-section{
 
 }
-/* .bmi-section-content{
-    max-width: 353px;
-    width: 100%;
-    
-} */
 .bmi-heading{
     font-size: 32px;
     margin-left: 20px;
@@ -994,6 +987,7 @@ input{
 
 /* start of footer */
 .footer-container{
+    padding-top: 20px;
     padding-bottom: 57px;
 }
 .footer-container-div{
@@ -1001,6 +995,7 @@ input{
     max-width: 343px;
     width: 100%; 
     margin: 0;
+    gap: 20px;
    
 }
 .footer-content-1{
